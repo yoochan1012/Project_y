@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page()최유찬</title>
+    <link rel="stylesheet" href="new.css">
+    <style>
+        #cont, #cont_b {
+            width: 80%;
+            margin-left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>91914377</h1><br>
+        <nav>
+            <ul id="topMenu">
+                <li><a href="$.html">$</a></li>
+                <li><a href="Fav.html">Favorites</a></li>
+                <li><a href="new.html"><span class="place">Main</span></a></li>
+            </ul>
+        </nav>
+    </header>
+    <aside id="profile">
+        <button onclick="showM()" id="ShowHide" >
+            Show/Hide
+        </button>
+        <div id="cont">
+        Profile<hr>
+       Name: 최유찬<br><hr>
+       B/D: 1999. 10. 12<br><hr>
+       소속: 정보보호학전공<br><hr>
+       좋아하는 것: 야구, 축구, 지도<hr>
+        </div>
+       
+    </aside>
+    <article id="profInfo">
+        <button onclick="showN()" id="ShowHide" >
+            Show/Hide
+        </button>
+        <div id="cont_b">
+            <strong>Portfolio</strong><hr>
+            학력 <br><br><br><br><hr>
+            경력 <br><br><br><br><hr>
+            수상 이력 <br><br><br><br><hr>
+        </div>
+    </article>
+    <footer>
+        <div id="f_link">
+            Made by 최유찬
+        </div>
+    </footer>
+
+    <script>
+        function showM() {
+            var v = document.getElementById("cont");
+                if (v.style.display === 'none') {
+                    document.getElementById("cont").style.display = "block";
+                } else {
+                    document.getElementById("cont").style.display = "none";
+                }
+            }
+
+        function showN() {
+        var w = document.getElementById("cont_b");
+            if (w.style.display === 'none') {
+                document.getElementById("cont_b").style.display = "block";
+            } else {
+                document.getElementById("cont_b").style.display = "none";
+            }
+        }
+            
+    </script>
+</body>
+</html>

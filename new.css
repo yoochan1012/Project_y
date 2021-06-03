@@ -1,0 +1,163 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {  
+    font-size: 100px;
+    color: yellowgreen;
+    text-align: center;
+    transition-property: color;
+    transition-duration: 3s;
+}
+
+h1:hover {
+    color:crimson;
+}
+
+header {
+    height: 240px;
+    background: linear-gradient(to right,#92f1d5,#abf6bd);
+}
+
+
+ul li {
+    list-style: none;
+    float: right;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: blueviolet;
+    display: block;
+    width: 100px;
+}
+
+a:hover {
+    color: greenyellow;
+}
+
+aside {
+    background: linear-gradient(to right,yellow,blueviolet);
+    width: 50%;
+    height: 720px;
+    float: left;
+}
+
+article {
+    background: linear-gradient(to right,blue, pink);
+    width: 50%;
+    height: 720px;
+    float: left;
+}
+
+footer {
+    clear: both;
+    background-color: deeppink;
+    height: 120px;
+}
+
+div[id ^= cont] {
+    padding: 30px;
+    font-size: 50px;
+    font-weight: bold;
+    color: aqua;
+    background: linear-gradient(to right,crimson, red);
+    border-radius: 10px;
+}
+
+div[id ^= cont]:hover {
+    color: magenta;
+    background: linear-gradient(to right,aquamarine, aqua);
+}
+
+#cont_b {
+    font-size: 20px;
+}
+
+.place {
+    font-size: 20px;
+    color: green;
+}
+
+#f_link {
+    text-align: center;
+    font-size: 30px;
+    padding: 30px;
+    color: rgb(101, 206, 32);
+    font-style: oblique;
+    text-shadow: rgb(70, 134, 186) 5px 5px 5px;
+}
+
+#ShowHide {
+    background-color: dodgerblue;
+    width: 20%;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    margin: 30px;
+}
+
+#ShowHide:hover {
+    background-color: rgb(225, 91, 0);
+}
+
+@media screen and (max-width: 767px) {
+    header {
+        background:linear-gradient(to right,#7d6ae7,#56a2d5);
+    }
+    h1 {
+        height: 160px;
+        width: 100%;
+        font-size: 66.7px;
+        color: greenyellow;
+        text-align: center;
+    }
+
+    aside {
+        background: linear-gradient(to right,yellow,blueviolet);
+        width: 100%;
+        height: 600px;
+        float: left;
+    }
+    
+    article {
+        background: linear-gradient(to right,blue, pink);
+        width: 100%;
+        height: 600px;
+        float: left;
+    }
+
+    footer {
+        height: 80px;
+        background-color: lightcoral;
+    }
+
+    div[id ^= cont] {
+        padding: 30px;
+        font-size: 30px;
+        color: aqua;
+    }
+
+    #f_link {
+        font-size: 20px;
+        text-shadow: rgb(0, 176, 240) 3px 3px 3px;
+    }
+
+    #ShowHide {
+        background-color:rgb(220, 111, 0);
+        width: 20%;
+        height: 50px;
+        border-radius: 5px;
+        border: none;
+        font-size: 15px;
+        margin: 30px;
+    }
+
+    #ShowHide:hover {
+        background-color: rgb(30, 144, 255);
+    }
+}

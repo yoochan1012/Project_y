@@ -1,0 +1,55 @@
+div[id ^= "grid"] {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color:antiquewhite;
+}
+
+#grid_n {
+    background: radial-gradient(circle at 20% 20%, #315288, rgb(206, 173, 119));
+}
+
+#grid_d{
+    background: radial-gradient(circle at 20% 20%, #131230, rgb(236, 237, 217));
+}
+
+#grid_kt{
+    background: radial-gradient(circle at 20% 20%, #353535, rgb(202, 202, 202));
+}
+
+#grid_lg{
+    background: radial-gradient(circle at 20% 20%, #C30452,rgb(60, 251, 173));
+}
+
+#grid_kh {
+    background: radial-gradient(circle at 20% 20%, #820024, rgb(125, 255, 219));
+}
+
+#grid_k {
+    background: radial-gradient(circle at 80% 80%, #EA0029, rgb(25, 255, 214));
+}
+
+#grid_l {
+    background: radial-gradient(circle at 80% 80%, #002955, rgb(255, 214, 170));
+}
+
+#grid_s {
+    background: radial-gradient(circle at 80% 80%, #074CA1, rgb(248, 179, 94));
+}
+
+#grid_ss {
+    background: radial-gradient(circle at 80% 80%, #CC1133, rgb(51, 236, 204));
+}
+
+#grid_h {
+    background: radial-gradient(circle at 80% 80%, #F37321, rgb(12, 140, 221));
+}

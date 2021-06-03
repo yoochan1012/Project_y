@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TMI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <style>
+         body {
+            background-color: #0090ee;
+            transition-property: background-color;
+            transition-duration: 3s;
+        }
+
+        body:hover {
+          background-color: #00ee90;
+        }
+
+
+        .card {
+            margin: 30px;
+            padding: 30px;
+            color: #20c997;
+        }
+
+        .accordion-button {
+            color: #6610f2;
+        }
+
+        #ShowHide {
+        background-color:rgb(220, 111, 0);
+        width: 20%;
+        height: 50px;
+        border-radius: 5px;
+        border: none;
+        font-size: 15px;
+        margin: 30px;
+    }
+
+    #ShowHide:hover {
+        background-color: rgb(30, 144, 255);
+    }
+
+    img {
+      animation: fadein 5s;
+    }
+
+    @keyframes fadein {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    </style>
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-info">
+  <div class="container-fluid">
+    <a class="navbar-brand bg-primary" href="new_pro.html"><i class="bi-alarm" style="font-size: 2rem; color: rgb(255, 0, 157);"></i> КВО_тмı</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="new_pro.html"><i class="bi-app"; style="color: rgb(0, 255, 157)"></i>Main</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-arrow-bar-down" style="color: goldenrod;"></i>Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="seoul.html"><i class="bi bi-box-seam" style="color: #00a84d"></i>
+              <i class="bi bi-box-seam" style="color: #bdb092"></i> Seoul Stadium</a></li>
+            <li><a class="dropdown-item" href="seoul2.html"><i class="bi bi-box-seam" style="color: #0052a4"></i> Seoul Dome</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item active" href="link.html">Something else Seoul</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+        <div class="card" style="width: 80%;">
+          <div class="card-body">
+            <h5 class="card-title">서울종합운동장 야구장</h5>
+            <h6 class="card-subtitle mb-2 text-muted">잠실야구장</h6>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    잠실야구장에 오시는 길은 어떻게 되나요?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>지하철로 오려면, </strong><i class="bi bi-box-seam" style="color: #00a84d"></i><b style="color: #00a84d">2호선</b> & 
+                    <i class="bi bi-box-seam" style="color: #bdb092"></i><b style="color: #bdb092">9호선</b> 종합운동장역 6번 출구로 나가십시오.<br>
+                    <strong>버스로 오려면, </strong>잠실종합운동장 앞/건너 정류장에서 하차하세요.<br>
+                    <a href="https://place.map.kakao.com/20740490">여기</a>를 클릭 후, "End" 키를 눌러서 연계되는 버스노선을 확인하세요.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    잠실야구장의 내부시설과 특징점은 어떻게 되나요?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>내부 시설은 아래의 그림과 같습니다.</strong><br>
+                    <img src="ground.jpg"><br>
+                    펜스 거리는 100m-125m-100m로 우리나라에서 가장 큰 야구장으로 홈런 갯수가 다른 구장에 비해 적게 나옵니다.<br>
+                    이곳을 홈으로 하는 구장은 2개로 확인하려면 "Show/Hide" 버튼을 클릭하십시오.<br>
+                    <button onclick="showM()" id="ShowHide" >
+                      Show/Hide
+                    </button>
+                  
+                    <div id="baseclub" style="display: none;">
+                      아래 2개 구단이 홈으로 하고 있습니다.
+                      <img src="01.emblem.jpg">
+                      <img src="img_bi_01.png">
+                    </div><br>
+                    <table class="table table-bordered table-consed bg-primary" style="width: 30%; margin: 30px; text-align: center;">
+                      <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">Level</th>
+                          <th scope="col">Weekday</th>
+                          <th scope="col">Weekend</th>
+                        </tr>
+                      </thead>
+                      <tbody id="ticketPrice">
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    잠실야구장 주변에 어떤 장소가 있을까요?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <img class="place" src="KakaoMap_20210601_241641.png" width=100%>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      
+      <div class="card" style="width: 80%;">
+        <div class="card-body">
+          <h5 class="card-title">고척 스카이돔</h5>
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  고척 스카이돔에 오시는 길은 어떻게 되나요?
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><strong>지하철로 오려면, </strong><i class="bi bi-box-seam" style="color: #0052a4"></i><b style="color: #0052a4">1호선</b>구일역 2번 출구로 나가십시오.<br>
+                    <strong>버스로 오려면, </strong>동양미래대학.구로성심병원 앞 정류장에서 하차하세요.<br>
+                    <a href="https://place.map.kakao.com/7890664">여기</a>를 클릭 후, "End" 키를 눌러서 연계되는 버스노선을 확인하세요.</div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  고척 스카이돔의 내부시설과 특징점은 어떻게 되나요?
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><strong>내부 시설은 아래의 그림과 같습니다.</strong><br>
+                  <img src="bgDome01Large_200206.png"><br>
+                  펜스 거리는 99m-122m-99m로 우리나라에서 최초이자 유일의 돔형 야구장으로 잠실 못지않게 홈런이 많게 나오지는 않습니다.<br>
+                  이곳을 홈으로 하는 구장:<br>
+                  <button onclick="showDome()" id="ShowHide" >
+                    Show/Hide
+                  </button>
+                  <div id="dome" style="display: none;">
+                    <img src="imgEmblem11.jpg">
+                  </div><br>
+                  티켓 가격은 아래 그림을 참조하세요.
+                  <div>
+                    <img id="ticket" src = "캡처.png">
+                  </div>
+                  <table class="table table-bordered table-consed bg-primary" style="width: 30%; margin: 30px; text-align: center;">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Level</th>
+                        <th scope="col">Weekday</th>
+                        <th scope="col">Weekend</th>
+                      </tr>
+                    </thead>
+                    <tbody id="ticket">
+                    </tbody>
+                  </table>
+                </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  고척 스카이돔 주변에 어떤 장소가 있을까요?
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <img src="KakaoMap_20210601_164009.png" width=100%>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      
+    <script>
+      function showM() {
+          var v = document.getElementById("baseclub");
+              if (v.style.display === 'none') {
+                  document.getElementById("baseclub").style.display = "block";
+              } else {
+                  document.getElementById("baseclub").style.display = "none";
+              }
+          }
+
+        function showDome() {
+          var d = document.getElementById("dome");
+            if(d.style.display ==='none') {
+              d.style.display = "block";
+            }
+            else {
+              d.style.display = "none";
+            }
+        }
+        
+    </script><script src="baseball.js"></script>
+      
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+</body>
+</html>
+
+<!-- 
+  
+-->

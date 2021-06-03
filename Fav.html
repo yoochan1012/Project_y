@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@.html</title>
+    <link rel="stylesheet" href="new.css">
+    <style>
+        
+        #kbaseball, #kfootball {
+            background: linear-gradient(to right, rgb(100, 149, 198), rgb(198, 149, 100));
+            border-radius: 20px;
+            width: 80%; height: 200px;
+            margin: 30px;
+            padding: 30px;
+            font-size: large;
+        }
+
+        #kbaseball:hover {
+            background: linear-gradient(to left, rgb(0, 149, 198), rgb(198, 149, 0));
+        }
+
+        #kfootball:hover {
+            background: linear-gradient(to left, rgb(0, 198, 149), rgb(149, 198, 0));
+        }
+
+        #kakao, #konest {
+            background: linear-gradient(to right, rgb(225, 200, 198), rgb(198, 225, 200));
+            border-radius: 20px;
+            width: 80%; height: 200px;
+            margin: 30px;
+            padding: 30px;
+        }
+
+        #kakao:hover {
+            background: linear-gradient(to left, rgb(225, 200, 0), rgb(0, 200, 225));
+        }
+
+        #konest:hover {
+            background: linear-gradient(to left, rgb(0, 225, 200), rgb(200, 225, 0));
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>91914377</h1><br>
+        <nav>
+            <ul id="topMenu">
+                <li><a href="$.html">$</a></li>
+                <li><a href="Fav.html"><span class="place">Favorites</span></a></li>
+                <li><a href="new.html">Main</a></li>
+            </ul>
+        </nav>
+        </header>
+        <aside>
+            <button onclick="showM()" id="ShowHide" >
+                Show/Hide
+            </button>
+            <div id="sports">
+                <div id="kbaseball">
+                    <a href="http://www.koreabaseball.com"><img src="KBO.JPG" width=300px height=auto><br>KBO</a>
+                </div>
+                <div id="kfootball">
+                    <a href="http://www.kleague.com"><img id="KLEAGUE" src="KLEAGUE.JPG" width=100px height=auto><br>K LEAGUE</a>
+                </div>
+            </div>
+        </aside>
+        <article>
+            <button onclick="showN()" id="ShowHide" >
+                Show/Hide
+            </button>
+            <div id="map">
+                <div id="kakao">
+                    <a href="#"><img src="카맵.JPG" width=300% height=auto><br>kakaomap</a>
+                </div>
+                <div id="konest">
+                    <a href="#"><img src="konest.JPG" width=300% height=auto><br>KONEST</a>
+                </div>
+            </div>
+        </article>
+        <footer id="f_link">
+            <div>
+                Made by 최유찬
+            </div>
+        </footer>
+        
+        <script>
+        function showM() {
+            var v = document.getElementById("sports");
+                if (v.style.display === 'none') {
+                    document.getElementById("sports").style.display = "block";
+                } else {
+                    document.getElementById("sports").style.display = "none";
+                }
+            }
+
+        function showN() {
+        var w = document.getElementById("map");
+            if (w.style.display === 'none') {
+                document.getElementById("map").style.display = "block";
+            } else {
+                document.getElementById("map").style.display = "none";
+            }
+        }
+        </script>
+</body>
+</html>
